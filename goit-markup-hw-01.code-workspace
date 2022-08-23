@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "name": "goit-markup-hw-01",
+      "path": "."
+    },
+    {
+      "path": "..\\..\\..\\Desktop\\goit-markup-hw-01\\imges"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-01"
+  }
+}

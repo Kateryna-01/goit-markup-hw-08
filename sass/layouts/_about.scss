@@ -1,0 +1,36 @@
+.about {
+    padding-bottom: 94px;
+    &__title {
+        margin-bottom: 50px;
+        @include font(null, 36px, 1.17, 0.03em);
+        text-align: center;
+        color: var(--color-title);
+        }
+    &__list {
+        display: flex;
+        gap: 30px;
+        }
+    &__wrap {
+        position: relative;
+        }
+    &__text {
+        @include font(700, 14px, 1.14, 0.03em);
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        }
+}
+
+
+
+
+
+

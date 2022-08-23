@@ -1,0 +1,48 @@
+.hero {
+    background-color: #2F303A;
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-bg.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__title {
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 696px;
+        @include font(900, 44px, 1.36, 0.06em);
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        }
+    &__btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    border-color: transparent;
+    border-radius: 4px;
+    @include font(700, 16px, 1.88, 0.06em);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: var(--color-link);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+        background-color: #188CE8;
+        }
+    }
+}
+
+
+
+
+
+

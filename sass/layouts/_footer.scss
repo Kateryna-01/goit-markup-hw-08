@@ -1,0 +1,133 @@
+.footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+    &__box {
+        display: flex;
+        align-items: baseline;
+    }
+    &__bloc {
+        margin-right: 70px;
+    }
+    &__logo {
+        margin-bottom: 20px;
+        display: inline-block;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+
+
+.address {
+    width: 231px;
+}
+
+.address__item {
+    margin-bottom: 9px
+}
+
+.address__item:nth-last-child(-n+1) {
+    margin-bottom: 0;
+}
+
+.address__contacts {
+    @include font(null, 14px, 1.71, 0.03em);
+    font-style: normal;
+}
+
+.address__contacts:hover,
+.address__contacts:focus {
+    color: #FFFFFF;
+}
+
+.address__contacts--white {
+    color: #FFFFFF;
+}
+
+.address__contacts--grey {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__title {
+    margin-bottom: 20px;
+
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.social__link--white {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+}
+
+
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 93px;
+}
+
+.form__box {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.form__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    margin-right: 12px;
+    padding-left: 16px;
+    outline: none;
+    color: #FFFFFF;
+}
+
+
+.form__button {
+    background: var(--color-link);
+    border: var(--color-link);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form__icon {
+    fill: #FFFFFF;
+}
+
+.form__button:hover,
+.form__button:focus {
+    background-color: #188CE8;
+    cursor: pointer;
+}
+
+.form__text {
+    @include font(700, 16px, 1.88, 0.06em);
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.form__input::placeholder {
+    @include font(null, 16px, 1.25, 0.03em);
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,92 @@
+.portfolio__btn-list {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.box-portfolio {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
+}
+
+
+.portfolio__btn {
+    padding: 6px 22px;
+    @include font(500, 16px, 1.62, 0.03em);
+    text-align: center;
+    color: var(--color-title);
+    cursor: pointer;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: #FFFFFF;
+            background-color: #2196F3;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+.portfolio__btn--all {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+
+
+.card__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__description {
+    position: absolute;
+    padding: 63px 24px;
+
+    @include font(null, 18px, 1.56, 0.03em);
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 0;
+    left: 0;
+    .card__item:hover &,
+    .card__item:focus & {
+            transform: translateY(0);
+        }
+}
+
+
+.card__link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+}
+
+
+.card__title {
+    margin-bottom: 4px;
+    @include font(null, 18px, 2, 0.06em);
+    color: var(--color-title);
+}
+
+.card__text {
+    @include font(null, 16px, 1.88, 0.03em);
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
