@@ -1,18 +1,29 @@
 .portfolio__btn-list {
-    margin-bottom: 50px;
     display: flex;
-    justify-content: center;
     gap: 8px;
+    @media screen and (min-width:320px) {
+        margin-bottom: 40px;
+        // }
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+        }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px; 
+    }
 }
 
-.box-portfolio {
+.card__box {
+    width: 100%;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     background: #FFFFFF;
+    
 }
 
 
 .portfolio__btn {
+    flex-wrap: wrap;
     padding: 6px 22px;
     @include font(500, 16px, 1.62, 0.03em);
     text-align: center;
@@ -28,6 +39,7 @@
             background-color: #2196F3;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
+
 }
 
 .portfolio__btn--all {
@@ -36,10 +48,10 @@
 }
 
 
-
 .card__wrap {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .card__description {
@@ -68,11 +80,10 @@
         &:focus {
                 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-
 }
 
-
 .card__title {
+    display: flex;
     margin-bottom: 4px;
     @include font(null, 18px, 2, 0.06em);
     color: var(--color-title);
@@ -84,9 +95,24 @@
     color: var(--color-text);
 }
 
-
 .card__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     gap: 30px;
+    width: 100%;
+}
+
+.card__item{
+        display: flex;
+    @media screen and (min-width:480px) {
+        width: 100%;
+        // justify-content: center;
+        // align-items: center;
+    }
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px)/2);
+            
+        }
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 60px)/3);}
 }

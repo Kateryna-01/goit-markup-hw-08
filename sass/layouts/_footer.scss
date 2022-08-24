@@ -2,30 +2,48 @@
     background-color: #2F303A;
     padding: 60px 0;
     &__box {
-        display: flex;
-        align-items: baseline;
+        @media screen and (min-width:768px){
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+        @media screen and (min-width:1200px){
+            flex-wrap:nowrap;
+        }
+
     }
     &__bloc {
-        margin-right: 70px;
+        width: 100%;
+        @media screen and (min-width:768px){
+            width: 50%;
+        }
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // margin-right: 70px;
     }
     &__logo {
+        width: 100%;
         margin-bottom: 20px;
         display: inline-block;
         color: #FFFFFF;
+        @media screen and (max-width:1200px){
+        display: flex;
+        justify-content: center;     
+        }
     }
 }
 
-
-
-
-
-
 .address {
+    @media screen and (min-width:1200px){
     width: 231px;
+    }
+    width: 100%;
 }
 
 .address__item {
-    margin-bottom: 9px
+    margin-bottom: 8px;
 }
 
 .address__item:nth-last-child(-n+1) {
@@ -35,6 +53,11 @@
 .address__contacts {
     @include font(null, 14px, 1.71, 0.03em);
     font-style: normal;
+    @media screen and (max-width:1200px){
+            display: flex;
+            justify-content: center;
+    }
+
 }
 
 .address__contacts:hover,
@@ -50,12 +73,33 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__title {
-    margin-bottom: 20px;
+.social-networks{
+    @media screen and (min-width:320px) {
+            margin-top: 60px;
+            }
+    @media screen and (min-width:768px) {
+            width: 50%;
+            margin-top: 0;
+        }
+    @media screen and (min-width:1200px) {
+            margin-left: 70px;
+        }
+}
 
+.footer__title {
+    width: 100%;
+    margin-bottom: 20px;
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (min-width:320px){
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    } 
+    @media screen and (min-width:1200px) {
+        justify-content: start;
+    }
 }
 
 
@@ -65,31 +109,80 @@
 }
 
 
-
 .form {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 93px;
+        @media screen and (min-width:320px) {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-left: 93px;
+            margin-top: 0;
+        }       
 }
 
 .form__box {
-    display: flex;
+    @media screen and (min-width:320px) {
     width: 100%;
+    }
+    @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+    @media screen and (min-width:1200px){
     justify-content: flex-end;
+    flex-wrap: nowrap;
+    }
+
+}
+
+.form__title{
+    width: 100%;
+    margin-bottom: 20px;
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    @media screen and (min-width:320px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    
+    @media screen and (min-width:1200px) {
+    justify-content: start;
+    }
 }
 
 .form__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
-    height: 50px;
     background-color: #2F303A;
-    margin-right: 12px;
+    height: 50px;
     padding-left: 16px;
     outline: none;
     color: #FFFFFF;
+    @media screen and (min-width:320px){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+    }
+        @media screen and (min-width:768px){
+            width: 450px;
+            margin-right: 166px;
+            margin-left: 152px;
+            
+        }
+    @media screen and (min-width:1200px){
+            margin-left: 0;
+            margin-right: 12px;
+            width: 358px;
+    }
 }
 
 
