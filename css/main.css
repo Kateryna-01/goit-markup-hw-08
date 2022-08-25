@@ -37,7 +37,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  max-width: 100%;
 }
 
 .body {
@@ -50,6 +49,17 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .container {
@@ -212,8 +222,8 @@ img {
 .hero {
   background-color: #2F303A;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-bg.jpg);
-  background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-mob.jpg);
+  background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-mob.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -224,12 +234,38 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-tab.jpg);
+    background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-tab-2x.jpg);
+    background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-tab-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-bg.jpg);
+    background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 55, 58, 0.4)), to(rgba(47, 55, 58, 0.4))), url(../imges/hero-bg-2x.jpg);
+    background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-bg-2x.jpg);
   }
 }
 .hero__title {
@@ -280,20 +316,12 @@ img {
 }
 
 .benefits__list {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .benefits__list {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .benefits__item {
@@ -349,7 +377,7 @@ img {
 }
 
 .about {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 @media screen and (max-width: 1200px) {
   .about {
@@ -399,14 +427,6 @@ img {
 
 .team {
   background-color: #F5F4FA;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 .team__list {
   display: -webkit-box;
@@ -502,17 +522,6 @@ img {
   fill: #afb1b8;
 }
 
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .clients__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -589,11 +598,20 @@ img {
 
 .footer {
   background-color: #2F303A;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__box {
+  max-width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .footer__box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__box {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -610,34 +628,28 @@ img {
         flex-wrap: nowrap;
   }
 }
-.footer__bloc {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .footer__bloc {
     width: 50%;
   }
 }
 .footer__logo {
-  width: 100%;
   margin-bottom: 20px;
   display: inline-block;
   color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
   }
 }
 
-.address {
-  width: 100%;
-}
 @media screen and (min-width: 1200px) {
   .address {
     width: 231px;
@@ -682,10 +694,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 320px) {
-  .social-networks {
-    margin-top: 60px;
-  }
+.social-networks {
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .social-networks {
@@ -700,7 +710,6 @@ img {
 }
 
 .footer__title {
-  width: 100%;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -708,17 +717,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-@media screen and (min-width: 320px) {
-  .footer__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__title {
@@ -734,17 +738,9 @@ img {
 }
 
 .form {
-  width: 100%;
-}
-@media screen and (min-width: 320px) {
-  .form {
-    margin-top: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .form {
@@ -753,23 +749,11 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .form__box {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form__box {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -787,17 +771,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-@media screen and (min-width: 320px) {
-  .form__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .form__title {
@@ -817,24 +796,15 @@ img {
   padding-left: 16px;
   outline: none;
   color: #FFFFFF;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
-@media screen and (min-width: 320px) {
-  .form__input {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .form__input {
     width: 450px;
-    margin-right: 166px;
-    margin-left: 152px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1195,15 +1165,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-}
-@media screen and (min-width: 320px) {
-  .portfolio__btn-list {
-    width: 100%;
-    margin-bottom: 40px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__btn-list {
@@ -1329,14 +1294,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-@media screen and (min-width: 480px) {
-  .card__item {
-    width: 100%;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .card__item {

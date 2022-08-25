@@ -1,9 +1,8 @@
 .portfolio__btn-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    @media screen and (min-width:320px) {
-        margin-bottom: 40px;
-        // }
+    margin-bottom: 40px;
     @media screen and (min-width:768px) {
         margin-bottom: 30px;
         justify-content: center;
@@ -17,13 +16,11 @@
     width: 100%;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    background: #FFFFFF;
-    
+    background: #FFFFFF; 
 }
 
 
 .portfolio__btn {
-    flex-wrap: wrap;
     padding: 6px 22px;
     @include font(500, 16px, 1.62, 0.03em);
     text-align: center;
@@ -39,7 +36,6 @@
             background-color: #2196F3;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
-
 }
 
 .portfolio__btn--all {
@@ -57,7 +53,6 @@
 .card__description {
     position: absolute;
     padding: 63px 24px;
-
     @include font(null, 18px, 1.56, 0.03em);
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
@@ -104,14 +99,9 @@
 
 .card__item{
         display: flex;
-    @media screen and (min-width:480px) {
         width: 100%;
-        // justify-content: center;
-        // align-items: center;
-    }
     @media screen and (min-width:768px) {
-        width: calc((100% - 30px)/2);
-            
+        width: calc((100% - 30px)/2);   
         }
     @media screen and (min-width:1200px) {
         width: calc((100% - 60px)/3);}

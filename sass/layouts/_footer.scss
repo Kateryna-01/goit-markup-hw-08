@@ -1,9 +1,14 @@
 .footer {
     background-color: #2F303A;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__box {
+        max-width: 100%;
+        @media screen and (min-width:480px){
+            padding-left: 15px;
+            padding-right: 15px;            
+}
         @media screen and (min-width:768px){
-            width: 100%;
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
@@ -11,26 +16,21 @@
         @media screen and (min-width:1200px){
             flex-wrap:nowrap;
         }
-
     }
     &__bloc {
-        width: 100%;
         @media screen and (min-width:768px){
             width: 50%;
         }
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: center;
-        // margin-right: 70px;
+
     }
     &__logo {
-        width: 100%;
         margin-bottom: 20px;
         display: inline-block;
         color: #FFFFFF;
-        @media screen and (max-width:1200px){
         display: flex;
-        justify-content: center;     
+        justify-content: center;
+        @media screen and (min-width:1200px){
+        display: block;
         }
     }
 }
@@ -39,7 +39,6 @@
     @media screen and (min-width:1200px){
     width: 231px;
     }
-    width: 100%;
 }
 
 .address__item {
@@ -74,9 +73,7 @@
 }
 
 .social-networks{
-    @media screen and (min-width:320px) {
-            margin-top: 60px;
-            }
+     margin-top: 60px;
     @media screen and (min-width:768px) {
             width: 50%;
             margin-top: 0;
@@ -87,16 +84,12 @@
 }
 
 .footer__title {
-    width: 100%;
     margin-bottom: 20px;
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: #FFFFFF;
-    @media screen and (min-width:320px){
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    } 
+    display: flex;
+    justify-content: center;
     @media screen and (min-width:1200px) {
         justify-content: start;
     }
@@ -110,29 +103,18 @@
 
 
 .form {
-    width: 100%;
-        @media screen and (min-width:320px) {
-            margin-top: 60px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        @media screen and (min-width:1200px) {
-            margin-left: 93px;
-            margin-top: 0;
-        }       
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
+        margin-top: 0;
+    }       
 }
 
 .form__box {
-    @media screen and (min-width:320px) {
-    width: 100%;
-    }
-    @media screen and (min-width:768px) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    }
     @media screen and (min-width:1200px){
+    display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     }
@@ -145,13 +127,8 @@
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: #FFFFFF;
-    
-    @media screen and (min-width:320px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    }
-    
     @media screen and (min-width:1200px) {
     justify-content: start;
     }
@@ -166,17 +143,13 @@
     padding-left: 16px;
     outline: none;
     color: #FFFFFF;
-    @media screen and (min-width:320px){
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-    }
-        @media screen and (min-width:768px){
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+        @media screen and (min-width:480px){
             width: 450px;
-            margin-right: 166px;
-            margin-left: 152px;
-            
         }
     @media screen and (min-width:1200px){
             margin-left: 0;

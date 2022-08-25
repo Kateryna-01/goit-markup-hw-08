@@ -10,7 +10,11 @@
     text-decoration: none;
 }
 
-// .section {
-//     padding-bottom: 94px;
-//     padding-top: 94px;
-// }
+.section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @media screen and (min-width:1200px) {
+            padding-bottom: 94px;
+            padding-top: 94px;   
+    }
+}
