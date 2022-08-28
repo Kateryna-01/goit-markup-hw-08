@@ -22,6 +22,7 @@
             width: 50%;
         }
 
+
     }
     &__logo {
         margin-bottom: 20px;
@@ -38,7 +39,9 @@
 .address {
     @media screen and (min-width:1200px){
     width: 231px;
-    }
+    display: flex;
+    justify-content: start;
+        }
 }
 
 .address__item {
