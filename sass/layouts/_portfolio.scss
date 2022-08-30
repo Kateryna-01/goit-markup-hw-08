@@ -17,8 +17,8 @@
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     background: #FFFFFF; 
+    flex-grow: 1;
 }
-
 
 .portfolio__btn {
     padding: 6px 22px;
@@ -65,11 +65,15 @@
     .card__item:focus & {
             transform: translateY(0);
         }
+    @media screen and (max-width:479px){
+        overflow: auto;
+    }
 }
 
-
 .card__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    // display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
